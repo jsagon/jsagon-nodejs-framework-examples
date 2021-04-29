@@ -1,3 +1,5 @@
+import httpKernel from './http/kernel'
+
 module.exports = {
   // App's uri base. Example if uri: "test", example.com/test root url for all routes
   // Uri base da aplicação. Se uri: "test", example.com/test será a url base para todas as rotas definidas
@@ -5,5 +7,7 @@ module.exports = {
   // Application is enabled - Aplicação está habilitada para uso
   enabled: true,
   // Layout file to be used - Layout a ser usado pelo app
-  // layout: 'main'
+  // layout: 'main',
+  // Local project http config - Configurações de http do projeto local
+  httpKernel
 }
