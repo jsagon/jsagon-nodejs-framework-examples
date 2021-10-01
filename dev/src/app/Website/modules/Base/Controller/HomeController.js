@@ -1,6 +1,11 @@
-const { AbstractController } = require('@jsagon/core')
+const { ControllerBase, Controller, Get } = require('@jsagon/core')
 
-class HomeController extends AbstractController {
+@Controller()
+class HomeController extends ControllerBase {
+  @Get()
+  async index (req, res) {
+    return this.render()
+  }
 }
 
 module.exports = HomeController
