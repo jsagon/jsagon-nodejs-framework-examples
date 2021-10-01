@@ -11,4 +11,3 @@ module.exports = {
   // Local project http config - Configurações de http do projeto local
   httpKernel
 }
- 
