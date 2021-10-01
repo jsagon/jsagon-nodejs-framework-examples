@@ -37,5 +37,7 @@
     "tsconfig-paths": "^3.11.0",
     "typescript": "^4.4.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@jsagon/core": "^1.1.0"
+  }
 }
