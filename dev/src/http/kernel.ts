@@ -1,8 +1,15 @@
+import { GlobalMiddleware } from './middlewares/HiMiddleware'
+
 export default {
   // Middlewares that should run for every route in project - Middleware que rodará em todas as rotas do projeto
   globalMiddlewares: {
+    registered: {
+      global: GlobalMiddleware
+    },
     // Middlewares that should run before a route - Middleware a ser executado antes da rota
-    before: [],
+    before: [
+      'global'
+    ],
     // Middlewares that should run after a route - Middleware a ser executado depois da rota
     after: []
   }
